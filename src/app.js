@@ -10,6 +10,8 @@ const cors = require ('cors');
 const mascotaRouter= require('./routes/mascotas.router');
 const empleadoRouter= require('./routes/empleados.router');
 const diagnosticoRouter= require('./routes/diagnosticos.router')
+const alumnoRouter= require('./routes/diagnosticos.router')
+const usuarioRouter= require('./routes/usuarios.router')
 
 app.set ('port', 3000);//puerto del servidor backend
 app.use (cors());//resuelve las colisiones demultiples servidores en un mismo equipo
@@ -20,7 +22,7 @@ app.use(myConnection(mysql,{
     user: 'root',
     password: '',
     port: 3306,
-    database: 'saludutng'  
+    database: 'saludutng2'  
 }, 'single'));
 
 app.use (express.json()); //permitirel envio de objetos json en las peticiones o solicitudes 
@@ -29,5 +31,6 @@ app.use(require('./routes/mascotas.router'));
 app.use(require('./routes/empleados.router'));
 app.use(require('./routes/diagnosticos.router'));
 app.use(require('./routes/alumnos.router'));
+app.use(require('./routes/usuarios.router'));
 
 module.exports= app;

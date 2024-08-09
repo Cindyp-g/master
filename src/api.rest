@@ -105,13 +105,13 @@ Content-Type: application/json
 GET  http://localhost:3000/alumnos/saludo
 
 ### id 
-GET  http://localhost:3000/alumnos/1
+GET  http://localhost:3000/alumnos/1223100475
 
 ### todos los empleados
 GET  http://localhost:3000/alumnos
 
 ### eliminar
-DELETE http://localhost:3000/alumnos
+DELETE http://localhost:3000/alumnos/1223100347
 
 
 ### insertar 
@@ -119,10 +119,10 @@ POST http://localhost:3000/alumnos
 Content-Type: application/json 
 
 {
-    "numcontrol": 1223100464,            
-    "nombre": "Juan Yael" ,
-    "apellidop": "Sosa" ,
-    "apellidom": "Hernandez",
+    "numcontrol": 122360000,            
+    "nombre": "celeste" ,
+    "apellidop": "peña" ,
+    "apellidom": "gonzalezz",
     "grupo": "GEVN0331",
     "carrera":"Entornos" ,
     "numcelular":4191510449 ,
@@ -131,6 +131,38 @@ Content-Type: application/json
 
 ###
 PUT http://localhost:3000/alumnos
+Content-Type: application/json
+
+{
+
+}
+
+
+### saludo
+GET  http://localhost:3000/usuarios/saludo
+
+### id 
+GET  http://localhost:3000/usuarios/1
+
+### todos los empleados
+GET  http://localhost:3000/usuarios
+
+### eliminar
+DELETE http://localhost:3000/usuarios
+
+
+### insertar 
+POST http://localhost:3000/usuarios
+Content-Type: application/json 
+
+{
+    "idu":'',
+    "numcontrol": 122360000,            
+    "correoe": "yael@email.com"
+}
+
+###
+PUT http://localhost:3000/usuaros
 Content-Type: application/json
 
 {

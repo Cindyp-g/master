@@ -6,7 +6,7 @@ alumnosCtr1.saludo=(req,res)=>{
 
 
 alumnosCtr1.getById= (req, res) => {
-    const {folio} = req.params;
+    const {numcontrol} = req.params;
     req.getConnection((err, conn) =>{
         conn.query('SELECT * FROM alumno WHERE numcontrol = ?',[numcontrol], (err, rows) => {
             if(err){
@@ -51,7 +51,7 @@ alumnosCtr1.delete= (req, res) => {
 
 alumnosCtr1.update= (req, res) => {
     const data = req.body;
-    const {folio}= req.params;
+    const {numcontrol}= req.params;
     console.log(data);
     req.getConnection((err, conn) =>{
         conn.query('UPDATE alumno SET ? WHERE numcontrol = ?',[data, numcontrol], (err, alumno) => {
