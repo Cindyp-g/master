@@ -12,6 +12,7 @@ const empleadoRouter= require('./routes/empleados.router');
 const diagnosticoRouter= require('./routes/diagnosticos.router')
 const alumnoRouter= require('./routes/diagnosticos.router')
 const usuarioRouter= require('./routes/usuarios.router')
+const justificanteRouter= require('./routes/justificantes.router')
 
 app.set ('port', 3000);//puerto del servidor backend
 app.use (cors());//resuelve las colisiones demultiples servidores en un mismo equipo
@@ -32,5 +33,6 @@ app.use(require('./routes/empleados.router'));
 app.use(require('./routes/diagnosticos.router'));
 app.use(require('./routes/alumnos.router'));
 app.use(require('./routes/usuarios.router'));
+app.use(require('./routes/justificantes.router'));
 
 module.exports= app;

@@ -150,7 +150,7 @@ GET  http://localhost:3000/usuarios/1
 GET  http://localhost:3000/usuarios
 
 ### eliminar
-DELETE http://localhost:3000/usuarios
+DELETE http://localhost:3000/usuarios/1
 
 
 ### insertar 
@@ -160,13 +160,15 @@ Content-Type: application/json
 {
     "usuarioa": "yjuan",
     "numcontrol": 122350000,            
-    "correoe": "yael@email.com"
+    "contrsena": ""
 }
 
 ###
-PUT http://localhost:3000/usuarios
+PUT http://localhost:3000/usuarios/3
 Content-Type: application/json
 
 {
+
+    "contrasena": "yael"
 
 }
